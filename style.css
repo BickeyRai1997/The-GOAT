@@ -126,7 +126,7 @@ h2,
   .hero .ten {
     color: transparent;
     -webkit-text-stroke: 1.5px rgba(126, 200, 234, 0.14);
-    text-stroke: 1.5px rgba(126, 200, 234, 0.14);
+    text-shadow: 1.5px rgba(126, 200, 234, 0.14);
   }
 }
 
