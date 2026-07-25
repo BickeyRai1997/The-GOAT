@@ -205,3 +205,58 @@ h2,
     transform-origin: bottom;
   }
 }
+
+/* ---------- SCOREBOARD ---------- */
+.scoreboard {
+  background: #060c15;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 4rem 1.5rem;
+}
+
+.scoreboard-inner {
+  max-width: 68rem;
+  margin: 0 auto;
+}
+
+.scoreboard-inner .eyebrow {
+  text-align: center;
+  display: block;
+  margin-bottom: 2.2rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.stat-cell {
+  background: #060c15;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.stat-cell:hover {
+  background: #0c1826;
+}
+
+.stat-cell .num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  color: var(--gold);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-cell .label {
+  margin-top: 0.6rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--paper-dim);
+}
