@@ -278,3 +278,53 @@ h2,
   color: var(--paper);
   margin-bottom: 3rem;
 }
+
+
+.tl {
+  position: relative;
+  padding-left: 2.2rem;
+  border-left: 1px solid var(--line);
+}
+
+.tl-item {
+  position: relative;
+  padding-bottom: 2.6rem;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.tl-item.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tl-item:last-child {
+  padding-bottom: 0;
+}
+
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: -2.42rem;
+  top: 0.3rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 4px #060c15;
+}
+
+.tl-year {
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--sky);
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.tl-text {
+  color: var(--paper-dim);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-top: 0.2rem;
+}
