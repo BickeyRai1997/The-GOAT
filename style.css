@@ -328,3 +328,29 @@ h2,
   line-height: 1.6;
   margin-top: 0.2rem;
 }
+
+/* ---------- TRAJECTORY DIVIDER ---------- */
+.trajectory {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.trajectory svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.trajectory path.curve {
+  fill: none;
+  stroke: var(--sky);
+  stroke-width: 1.5;
+  stroke-dasharray: 3 7;
+  stroke-linecap: round;
+  opacity: 0.35;
+}
+
+.trajectory circle {
+  fill: var(--gold);
+}
