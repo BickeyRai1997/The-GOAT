@@ -379,3 +379,32 @@ h2,
   color: var(--paper);
   margin-bottom: 3rem;
 }
+
+.honors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.honor-card {
+  background: var(--ink);
+  padding: 1.8rem 1.6rem;
+  border-top: 2px solid transparent;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.honor-card:hover {
+  border-top-color: var(--gold);
+  background: #0c1826;
+}
+
+.honor-card .title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  color: var(--paper);
+  margin-bottom: 0.4rem;
+}
