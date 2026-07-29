@@ -409,8 +409,33 @@ h2,
   margin-bottom: 0.4rem;
 }
 
-.honor-card .desc{
-    font-size: 0.88rem;
-    color: var(--paper-dim);
-    line-height: 1.55;
+.honor-card .desc {
+  font-size: 0.88rem;
+  color: var(--paper-dim);
+  line-height: 1.55;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 3rem 1.5rem 3.5rem;
+}
+
+footer .eyebrow {
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+footer p {
+  color: var(--paper-dim);
+  font-size: 0.85rem;
+  max-width: 30rem;
+  margin: 0.4rem auto 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 5rem;
   }
+}
