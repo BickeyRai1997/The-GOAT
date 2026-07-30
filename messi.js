@@ -27,3 +27,6 @@ const tlObserver = new IntersectionObserver((entries) => {
       entry.target.classList.add('in');
       tlObserver.unobserve(entry.target);
     }
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll('.tl-item').forEach(item => tlObserver.observe(item));
