@@ -19,3 +19,11 @@ const statObserver = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.3 });
+statObserver.observe(document.getElementById('statGrid'));
+
+const tlObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      tlObserver.unobserve(entry.target);
+    }
